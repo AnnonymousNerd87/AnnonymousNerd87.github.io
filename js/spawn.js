@@ -288,7 +288,7 @@ const spawn = {
             this.checkStatus();
         };
     },
-    finalBoss(x, y, radius = 300) {
+    finalBoss(x, y, radius = 100) {
         mobs.spawn(x, y, 6, radius, "rgb(150,150,255)");
         let me = mob[mob.length - 1];
         setTimeout(() => { //fix mob in place, but allow rotation
