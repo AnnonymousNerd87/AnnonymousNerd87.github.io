@@ -4105,7 +4105,7 @@ const b = {
         bullet[me] = Bodies.polygon(position.x, position.y, 20, radius, {
             density: 0.000001, //  0.001 is normal density
             inertia: Infinity,
-            frictionAir: 0.003,
+            frictionAir: 0.0015,
             dmg: 0, //damage on impact
             damage: tech.foamDamage * (tech.isFastFoam ? 2.8 : 1) * (tech.isBulletTeleport ? 1.53 : 1), //damage done over time
             scale: 1 - 0.006 / tech.bulletsLastLonger * (tech.isFastFoam ? 1.65 : 1),
