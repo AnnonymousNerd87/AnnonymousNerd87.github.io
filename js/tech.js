@@ -29,7 +29,7 @@ const tech = {
             }
         }
 
-        tech.damage = 1
+        tech.damage = 1;
         tech.junkChance = 0;
         tech.extraMaxHealth = 0;
         tech.totalCount = 0;
@@ -343,8 +343,8 @@ const tech = {
         effect() {
             m.skin.mech();
             tech.hardLanding = 110
-            tech.squirrelFx += 0.4;
-            tech.squirrelJump += 0.16;
+            tech.squirrelFx += 0.3;
+            tech.squirrelJump += 0.1;
             m.setMovement()
         },
         remove() {
@@ -983,8 +983,8 @@ const tech = {
         },
         requires: "not non-renewables",
         effect() {
-            tech.ammoCap = 15;
             powerUps.ammo.effect()
+            tech.ammoCap = 0;
         },
         remove() {
             tech.ammoCap = 0;
